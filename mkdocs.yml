@@ -1,0 +1,10 @@
+site_name: Documents for CliMet Server Service
+theme:
+  name: material
+nav:
+  - Home: 'index.md'
+  - 'Server':
+    - 'Introduction': 'server_introduction.md'
+    - 'Softwares': 'server_softwares.md'
+    - 'Datasets': 'server_datasets.md'
+  - 'About': 'about.md'
