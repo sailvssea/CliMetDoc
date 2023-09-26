@@ -9,17 +9,29 @@
 ## [Virtual Network Computing (VNC)](#vnc)
 
 ### Configuration at Server Point
-1. Log in the server using ***ssh*** command on your local computer: <br>
-    `ssh [username]@[xxx.xxx.xxx.xxx server ip address]`
+1. Log in the server using `#!bat ssh` command on your local computer:
+```{ .yaml .no-copy}
+ssh [username]@[xxx.xxx.xxx.xxx server ip address]
+```
 
-2. Set the password for the vnc connection on your local computer: <br>
-    `vncpasswd`
+2. Set the password for the vnc connection on your local computer:
+```bat linenums="1"
+vncpasswd
+```
 
-3. Start the vnc server: <br>
-    `vncserver -localhost no`
+3. Start the vnc server:
+```bat linenums="1"
+vncserver -localhost no
+```
 
-4. Check the vnc server status and the port # (DISPLAY #): <br>
-    `vncserver -list`
+4. Check the vnc server status and the port # (DISPLAY #):
+```bat linenums="1"
+vncserver -list
+```
+> ![vncserverlist](img/vncserverlist.png "vncserver -list")
+!!! note
+    Please keep in mind for the number in the ***X DISPLAY*** column.
+    This will be used when you try to connect to the vncviewer clients.
 
 ### Configuration at Client Point
 
