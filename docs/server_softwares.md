@@ -76,4 +76,37 @@ If you want to stop vnc server, you just kill the server via terminal command on
         
 ## [Matlab](#matlab)
 
+The Matlab path is `/usr/local/bin/matlab`   
+Get into the path and Run the matlab by inputing cmd `#!bat ./matlab` in terminal
+
 ## [Miniconda](#miniconda)
+
+The ***Miniconda*** has been installed on the server under the root account.
+It can be used in the user account by adding exporting the path to the `.bashrc` file in
+your home path `/home/.bashrc`  
+
+```bat
+export PATH="/home/super/miniconda3/bin:$PATH"
+```
+
+??? tip
+    After you export the path to the `.bashrc` file.
+    You also need to restart the terminal and excute `#!bat source ~/.bashrc`.
+    ```bat
+    conda info
+    ```
+    <div class="result" markdown>
+    ![condacheck](img/condacheck.png "condacheck"){width="300"}
+    </div>
+
+
+!!! note
+    * When you login the server using `#!cmd ssh`, you will get into `/home` path directly.
+    You can find the `.bashrc` file via `#!cmd ls -a` command in the `/home` path.
+    * When you login the server using `vncviewer`, you can find the `.bashrc` file in the
+    `Home` folder. Please note that `.bashrc` is a hided file in the `Home` folder.
+    You can display hided files using shortcuts ++ctrl+h++.
+
+
+
+    
