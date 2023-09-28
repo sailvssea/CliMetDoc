@@ -600,7 +600,34 @@ identification (Name). Afterwards, you are required for the password to connect.
 <code>vncserver -kill:*</code> <br>
 '*' is for all vnc servers; you can use number to kill a specific port.</p>
 <h2 id="matlab"><a href="#matlab">Matlab</a></h2>
+<p>The Matlab path is <code>/usr/local/bin/matlab</code> <br />
+Get into the path and Run the matlab by inputing cmd <code class="language-bat highlight">./matlab</code> in terminal</p>
 <h2 id="miniconda"><a href="#miniconda">Miniconda</a></h2>
+<p>The <strong><em>Miniconda</em></strong> has been installed on the server under the root account.
+It can be used in the user account by adding exporting the path to the <code>.bashrc</code> file in
+your home path <code>/home/.bashrc</code>  </p>
+<div class="language-bat highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>export PATH=<span class="s2">&quot;/home/super/miniconda3/bin:$PATH&quot;</span>
+</span></code></pre></div>
+<details class="tip">
+<summary>Tip</summary>
+<p>After you export the path to the <code>.bashrc</code> file.
+You also need to restart the terminal and excute <code class="language-bat highlight">source ~/.bashrc</code>.
+<div class="language-bat highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>conda info
+</span></code></pre></div>
+<div class="result" markdown>
+<a class="glightbox" href="../img/condacheck.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="condacheck" src="../img/condacheck.png" title="condacheck" width="300" /></a>
+</div></p>
+</details>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul>
+<li>When you login the server using <code class="language-text highlight">ssh</code>, you will get into <code>/home</code> path directly.
+You can find the <code>.bashrc</code> file via <code class="language-text highlight">ls -a</code> command in the <code>/home</code> path.</li>
+<li>When you login the server using <code>vncviewer</code>, you can find the <code>.bashrc</code> file in the
+<code>Home</code> folder. Please note that <code>.bashrc</code> is a hided file in the <code>Home</code> folder.
+You can display hided files using shortcuts <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-h">H</kbd></span>.</li>
+</ul>
+</div>
 
 
 
