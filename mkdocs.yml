@@ -28,6 +28,7 @@ nav:
   - 'About': 'about.md'
 
 markdown_extensions:
+  - tables
   - admonition
   - pymdownx.highlight:
       anchor_linenums: true
@@ -44,6 +45,11 @@ markdown_extensions:
   - pymdownx.tilde
   - attr_list
   - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+  
 
 
 plugins:
