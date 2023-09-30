@@ -21,7 +21,12 @@
 | :material-check: | Exa|[https://the.exa.website](https://the.exa.website)|<!-- md:version V0.10.1 -->|
 | :material-check: | Homebrew|[https://brew.sh](https://brew.sh)|<!-- md:version V2.5.0 -->|
 
-
+!!! info
+    To use the most of softwares. Please export the path to the `.bashrc` file in
+    your home path.
+    ```bat
+    export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
+    ```
 
 ## [Virtual Network Computing (VNC)](#vnc)
 
@@ -110,7 +115,7 @@ export PATH="/home/super/miniconda3/bin:$PATH"
     After you export the path to the `.bashrc` file.
     You also need to restart the terminal and excute `#!bat source ~/.bashrc`.
     ```bat
-    conda info
+    conda --version
     ```
     <div class="result" markdown>
     ![condacheck](img/condacheck.png "condacheck"){width="300"}
