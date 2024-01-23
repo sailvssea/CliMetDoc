@@ -45,10 +45,15 @@
     ---
 
     - :fontawesome-solid-floppy-disk: system on 3.8T SSD
-    - :fontawesome-solid-floppy-disk: workspace on 12T SSD
-    - :fontawesome-solid-floppy-disk: extra 22.1T SSD and 128T 2.5-inch SSD (appending)
+    - :fontawesome-solid-floppy-disk: workspace on 12T SSD (RAID5)
+    - :fontawesome-solid-floppy-disk: workspace1 on 13T SSD (RAID5)
+    - :fontawesome-solid-floppy-disk: workspace2 on 45T SSD (RAID5)
+    - :fontawesome-solid-floppy-disk: workspace3 on 50T SSD (RAID5)
+    ??? tip "Detailed Disk Configuration"
+        <div class="result" markdown>
+        ![diskstorage](img/CliMetServerDisk.png "diskstorage"){width="1000"}
+        </div>
 
-    ---
 
 
 
