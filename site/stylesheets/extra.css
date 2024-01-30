@@ -17,6 +17,11 @@
   animation: heart 1000ms infinite;
 }
 
+.mdx-heart {
+  animation: heart 1000ms infinite;
+  color: #EE0F0F
+}
+
 .mdx-badge__icon {
   padding: px2rem(4px);
   background: var(--md-accent-fg-color--transparent);

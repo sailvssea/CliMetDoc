@@ -28,6 +28,7 @@ nav:
     - 'Introduction': 'server_introduction.md'
     - 'Softwares': 'server_softwares.md'
     - 'Datasets': 'server_datasets.md'
+    - 'GPU usage': 'server_GPU.md'
   - 'About': 'about.md'
 
 markdown_extensions:
@@ -48,6 +49,11 @@ markdown_extensions:
   - pymdownx.tilde
   - attr_list
   - md_in_html
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg

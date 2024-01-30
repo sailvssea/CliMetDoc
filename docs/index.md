@@ -9,5 +9,6 @@ This website provides documents related to the [CliMet](https://cehsu.people.ust
         -Introduction # Description of Server Information
         -Softwares    # Softwares Installation and Configuration
         -Datasets     # Datasets on Server
+        -GPU usage    # GPU computation on Server
     -Dataset
     -About
