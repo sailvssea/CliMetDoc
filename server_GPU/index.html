@@ -506,7 +506,7 @@
 <li>
 <p class="annotate"><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.948 8.798v-1.43a6.7 6.7 0 0 1 .424-.018c3.922-.124 6.493 3.374 6.493 3.374s-2.774 3.851-5.75 3.851a3.67 3.67 0 0 1-1.158-.185v-4.346c1.528.185 1.837.857 2.747 2.385l2.04-1.714s-1.492-1.952-4-1.952a6.016 6.016 0 0 0-.796.035m0-4.735v2.138l.424-.027c5.45-.185 9.01 4.47 9.01 4.47s-4.08 4.964-8.33 4.964a6.46 6.46 0 0 1-1.095-.097v1.325c.3.035.61.062.91.062 3.957 0 6.82-2.023 9.593-4.408.459.371 2.34 1.263 2.73 1.652-2.633 2.208-8.772 3.984-12.253 3.984-.335 0-.653-.018-.971-.053v1.864H24V4.063zm0 10.326v1.131c-3.657-.654-4.673-4.46-4.673-4.46s1.758-1.944 4.673-2.262v1.237H8.94c-1.528-.186-2.73 1.245-2.73 1.245s.68 2.412 2.739 3.11M2.456 10.9s2.164-3.197 6.5-3.533V6.201C4.153 6.59 0 10.653 0 10.653s2.35 6.802 8.948 7.42v-1.237c-4.84-.6-6.492-5.936-6.492-5.936z"/></svg></span> <strong>GPU Information</strong> (1)</p>
 <ol>
-<li>using <code class="language-bat highlight">nvidia-msi</code> to get the gpu information</li>
+<li>using <code class="language-bat highlight">nvidia-smi</code> to get the gpu information</li>
 </ol>
 <hr />
 <ul>
@@ -569,17 +569,17 @@
 </table>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
+</div>
 <p>To use CuPy
-<div class="language-bat highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>conda activate Env_cupy
-</span></code></pre></div>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">import</span> <span class="nn">cupy</span> <span class="k">as</span> <span class="nn">cp</span>
-</span></code></pre></div>
+<code>bat
+    conda activate Env_cupy</code>
+<code>python
+    import cupy as cp</code>
 To verify
-<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">print</span><span class="p">(</span><span class="n">cp</span><span class="o">.</span><span class="n">cuda</span><span class="o">.</span><span class="n">runtime</span><span class="o">.</span><span class="n">getDeviceCount</span><span class="p">())</span>
-</span></code></pre></div>
-<div class="result" markdown>
-<code>&gt;&gt;&gt; 4</code>
-</div></p>
+<code>python
+    print(cp.cuda.runtime.getDeviceCount())</code></p>
+<div class="result">
+<p><code>&gt;&gt;&gt; 4</code></p>
 </div>
 <h2 id="numba">Numba</h2>
 <table>
@@ -610,21 +610,21 @@ To verify
 </table>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
+</div>
 <p>To use Numba
-<div class="language-bat highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>conda activate Env_numba
-</span></code></pre></div>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">import</span> <span class="nn">numba</span>
-</span></code></pre></div>
-To verify in python 
-<div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">numba</span><span class="o">.</span><span class="n">__version__</span>
-</span></code></pre></div>
-<div class="result" markdown>
-<code>&gt;&gt;&gt; '0.58.1'</code>
+<code>bat
+    conda activate Env_numba</code>
+<code>python
+    import numba</code>
+To verify in python
+<code>python
+    numba.__version__</code></p>
+<div class="result">
+<p><code>&gt;&gt;&gt; '0.58.1'</code></p>
 </div>
-To verify in command
-<div class="language-bat highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>numba -s/--sysinfo
-</span></code></pre></div></p>
-</div>
+<p>To verify in command
+<code>bat
+    numba -s/--sysinfo</code></p>
 <h2 id="pytorch">Pytorch</h2>
 <table>
 <thead>
@@ -649,22 +649,22 @@ To verify in command
 </table>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>To use Pytorch
-<div class="language-bat highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>conda activate Env_pytorch
-</span></code></pre></div>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="kn">import</span> <span class="nn">torch</span>
-</span></code></pre></div>
-To verify in python 
-<div class="language-python highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="n">torch</span><span class="o">.</span><span class="n">__version__</span>
-</span></code></pre></div>
-<div class="result" markdown>
-<code>&gt;&gt;&gt; '2.1.2+cu121'</code>
 </div>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="n">torch</span><span class="o">.</span><span class="n">cuda</span><span class="o">.</span><span class="n">is_available</span><span class="p">()</span>
-</span></code></pre></div>
-<div class="result" markdown>
-<code>&gt;&gt;&gt; True</code>
-</div></p>
+<p>To use Pytorch
+<code>bat
+    conda activate Env_pytorch</code>
+<code>python
+    import torch</code>
+To verify in python
+<code>python
+    torch.__version__</code></p>
+<div class="result">
+<p><code>&gt;&gt;&gt; '2.1.2+cu121'</code></p>
+</div>
+<p><code>python
+    torch.cuda.is_available()</code></p>
+<div class="result">
+<p><code>&gt;&gt;&gt; True</code></p>
 </div>
 
 
