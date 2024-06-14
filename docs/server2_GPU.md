@@ -25,11 +25,11 @@ flowchart TD
 
       ---
 
-      - :octicons-video-16: Model: NVIDIA A800
-      - :octicons-video-16: Number of Graphic Cards: 4
-      - :octicons-video-16: Size per cards: 80G
-      - :octicons-video-16: Driver Version: 525.125.06
-      - :octicons-video-16: CUDA Version: 12.0
+      - :octicons-video-16: Model: NVIDIA A40
+      - :octicons-video-16: Number of Graphic Cards: 2
+      - :octicons-video-16: Size per cards: 48G
+      - :octicons-video-16: Driver Version: 535.171.04
+      - :octicons-video-16: CUDA Version: 12.2
 
       ---
 
@@ -39,13 +39,13 @@ flowchart TD
 
 | :material-git:{ .mdx-heart } | Dependency                                         | Version                       |
 | ---------------------------- | -------------------------------------------------- | ----------------------------- |
-| :material-check:             | [Cupy](https://docs.cupy.dev/en/stable/index.html) | <!-- md:version 13.0.0 -->    |
-| :material-check:             | Cuda ToolKit                                       | <!-- md:version 12.0.76 -->   |
-| :material-check:             | cuDNN                                              | <!-- md:version 8.8.0.121 --> |
-| :material-check:             | cuTensor                                           | <!-- md:version 2.0.0.7 -->   |
-| :material-check:             | NCCL                                               | <!-- md:version 2.19.4.1 -->  |
-| :material-check:             | numpy                                              | <!-- md:version 1.26.3 -->    |
-| :material-check:             | python                                             | <!-- md:version 1.26.3 -->    |
+| :material-check:             | [Cupy](https://docs.cupy.dev/en/stable/index.html) | <!-- md:version 13.1.0 -->    |
+| :material-check:             | Cuda ToolKit                                       | <!-- md:version 12.5.40 -->   |
+| :material-check:             | cuDNN                                              | <!-- md:version 8.9.7.29 --> |
+| :material-check:             | cuTensor                                           | <!-- md:version 2.0.1.2 -->   |
+| :material-check:             | NCCL                                               | <!-- md:version 2.21.5.1 -->  |
+| :material-check:             | numpy                                              | <!-- md:version 1.26.4 -->    |
+| :material-check:             | python                                             | <!-- md:version 3.12.3 -->    |
 
 !!! info
 
@@ -60,18 +60,17 @@ flowchart TD
     ```python
     print(cp.cuda.runtime.getDeviceCount())
     ```
-
     <div class="result" markdown>
-    `>>> 4`
+    `>>> 2`
     </div>
 
 ## Numba
 
 | :material-git:{ .mdx-heart } | Dependency                                                         | Version                    |
 | ---------------------------- | ------------------------------------------------------------------ | -------------------------- |
-| :material-check:             | [Numba](https://numba.pydata.org/numba-doc/latest/user/index.html) | <!-- md:version 0.58.1 --> |
-| :material-check:             | numpy                                                              | <!-- md:version 1.26.3 --> |
-| :material-check:             | python                                                             | <!-- md:version 3.11.7 --> |
+| :material-check:             | [Numba](https://numba.pydata.org/numba-doc/latest/user/index.html) | <!-- md:version 0.59.1 --> |
+| :material-check:             | numpy                                                              | <!-- md:version 1.26.4 --> |
+| :material-check:             | python                                                             | <!-- md:version 3.12.3 --> |
 
 !!! info
 
@@ -86,7 +85,6 @@ flowchart TD
     ```python
     numba.__version__
     ```
-
     <div class="result" markdown>
     `>>> '0.58.1'`
     </div>
@@ -99,8 +97,8 @@ flowchart TD
 
 | :material-git:{ .mdx-heart } | Dependency                     | Version                        |
 | ---------------------------- | ------------------------------ | ------------------------------ |
-| :material-check:             | [Pytorch](https://pytorch.org) | <!-- md:version 2.1.2+cu121--> |
-| :material-check:             | python                         | <!-- md:version 3.11.7 -->     |
+| :material-check:             | [Pytorch](https://pytorch.org) | <!-- md:version 2.3.1+cudaversion 12.5--> |
+| :material-check:             | python                         | <!-- md:version 3.12.3 -->     |
 
 !!! info
 
@@ -109,6 +107,7 @@ flowchart TD
     conda activate Env_pytorch
     ```
     ```python
+
     import torch
     ```
     To verify in python
@@ -116,7 +115,7 @@ flowchart TD
     torch.__version__
     ```
     <div class="result" markdown>
-    `>>> '2.1.2+cu121'`
+    `>>> '2.3.1'`
     </div>
     ```python
     torch.cuda.is_available()

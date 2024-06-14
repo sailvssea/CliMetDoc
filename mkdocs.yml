@@ -2,8 +2,8 @@ site_name: Documents for CliMet Server Service
 theme:
   name: material
   features:
-      - content.code.copy
-      - content.code.select
+    - content.code.copy
+    - content.code.select
   icon:
     admonition:
       note: octicons/tag-16
@@ -23,13 +23,18 @@ extra_css:
   - stylesheets/extra.css
 
 nav:
-  - Home: 'index.md'
-  - 'Server':
-    - 'Introduction': 'server_introduction.md'
-    - 'Softwares': 'server_softwares.md'
-    - 'Datasets': 'server_datasets.md'
-    - 'GPU usage': 'server_GPU.md'
-  - 'About': 'about.md'
+  - Home: "index.md"
+  - "Server1":
+      - "Introduction": "server_introduction.md"
+      - "Softwares": "server_softwares.md"
+      - "Datasets": "server_datasets.md"
+      - "GPU usage": "server_GPU.md"
+  - "Server2":
+      - "Introduction": "server2_introduction.md"
+      - "Softwares": "server2_softwares.md"
+      - "Datasets": "server2_datasets.md"
+      - "GPU usage": "server2_GPU.md"
+  - "About": "about.md"
 
 markdown_extensions:
   - tables
