@@ -34,6 +34,21 @@ nav:
       - "Softwares": "server2_softwares.md"
       - "Datasets": "server2_datasets.md"
       - "GPU usage": "server2_GPU.md"
+  - "Server3":
+      - "Introduction": "server3_introduction.md"
+      - "Softwares": "server3_softwares.md"
+      - "Datasets": "server3_datasets.md"
+      - "GPU usage": "server3_GPU.md"
+  - "Server4":
+      - "Introduction": "server4_introduction.md"
+      - "Softwares": "server4_softwares.md"
+      - "Datasets": "server4_datasets.md"
+      - "GPU usage": "server4_GPU.md"
+  - "Server5":
+      - "Introduction": "server5_introduction.md"
+      - "Softwares": "server5_softwares.md"
+      - "Datasets": "server5_datasets.md"
+      - "GPU usage": "server5_GPU.md"
   - "About": "about.md"
 
 markdown_extensions:

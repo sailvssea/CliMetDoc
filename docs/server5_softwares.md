@@ -3,28 +3,29 @@
 | :heart:{ .mdx-heart } | Software                           | Discription                                                                        | Version                                                   |
 | --------------------- | ---------------------------------- | ---------------------------------------------------------------------------------- | --------------------------------------------------------- |
 | :material-check-all:  | [**VNC**](#vnc)                    | [Virtual Network Computing](https://tigervnc.org)                                  | <!-- md:version 1.12.0 --> installed by apt               |
-| :material-check-all:  | [**Matlab**](#matlab)              | [HKUST acadamic license](https://download.ust.hk/apps/site/info/matlab2023a.html)  | <!-- md:version 2024a --> installed by iso                |
+| :material-close-box:  | [**Matlab**](#matlab)              | [HKUST acadamic license](https://download.ust.hk/apps/site/info/matlab2023a.html)  | <!-- md:version 2024a --> installed by iso                |
 | :material-check-all:  | [**Miniconda**](#miniconda)        | [Python Env. Manager](https://docs.conda.io/projects/miniconda/en/latest/)         | <!-- md:version V24.4.0 --> installed by cml/wget         |
-| :material-check-all:  | [**FileZilla**](#filezilla)        | [Ftp clinet](https://filezilla-project.org/)                                       | <!-- md:version V3.67.0 --> download from website         |
+| :material-close-box:  | [**FileZilla**](#filezilla)        | [Ftp clinet](https://filezilla-project.org/)                                       | <!-- md:version V3.67.0 --> download from website         |
 | :material-check-all:  | [**Adobe Creative Cloud**](#Adobe) | [Adobe creative cloud](https://www.adobe.com/hk_en/creativecloud.html)             | <!-- md:version V2024 -->                                 |
-| :material-check:      | VSCODE                             | [IDE for Coding](https://code.visualstudio.com)                                    | <!-- md:version V1.90.0 --> installed by apt install .deb |
-| :material-check:      | Java                               | [Java-jdk](https://ubuntu.com/tutorials/install-jre#2-installing-openjdk-jre)      | <!-- md:version 11.0.23  --> installed by apt             |
-| :material-check:      | Panoply                            | [netCDF, HDF, GRIB Data Viewer](https://www.giss.nasa.gov/tools/panoply/download/) | <!-- md:version V5.4.1 --> download from website          |
-| :material-check:      | Latex(texlive-full)                | [Typesetting program](https://www.tug.org/texlive/)                                | <!-- md:version TeX Live 2019/Debian -->                  |
+| :material-close-box:  | VSCODE                             | [IDE for Coding](https://code.visualstudio.com)                                    | <!-- md:version V1.90.0 --> installed by apt install .deb |
+| :material-close-box:  | Java                               | [Java-jdk](https://ubuntu.com/tutorials/install-jre#2-installing-openjdk-jre)      | <!-- md:version 11.0.23  --> installed by apt             |
+| :material-close-box:  | Panoply                            | [netCDF, HDF, GRIB Data Viewer](https://www.giss.nasa.gov/tools/panoply/download/) | <!-- md:version V5.4.1 --> download from website          |
+| :material-close-box:  | Latex(texlive-full)                | [Typesetting program](https://www.tug.org/texlive/)                                | <!-- md:version TeX Live 2019/Debian -->                  |
 | :material-check:      | Python3                            | [https://www.python.org/downloads/](https://www.python.org/downloads/)             | <!-- md:version V3.12.3 --> preinstalled with OS          |
 | :material-check:      | Xterm                              | [https://invisible-island.net/xterm/](https://invisible-island.net/xterm/)         | <!-- md:version XTerm(392) --> installed by brew          |
 | :material-check:      | Zsh                                | [Z shell](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH)                  | <!-- md:version V5.9 --> installed by brew                |
 | :material-check:      | Oh-My-Zsh                          | [https://ohmyz.sh](https://ohmyz.sh)                                               | <!-- md:version master (a17789e) --> installed by curl    |
 | :material-check:      | TMUX                               | [https://github.com/tmux/tmux/wiki](https://github.com/tmux/tmux/wiki)             | <!-- md:version V3.4 --> installed by brew                |
 | :material-check:      | Neovim                             | [Uplevel VIM](https://neovim.io)                                                   | <!-- md:version V0.10.0 --> installed by brew             |
-| :material-check:      | Node                               | [https://nodejs.org/en](https://nodejs.org/en)                                     | <!-- md:version V22.2.0 --> installed by brew             |
-| :material-check:      | NPM                                | [https://www.npmjs.com](https://www.npmjs.com)                                     | <!-- md:version V10.7.2 --> installed by brew with node   |
-| :material-check:      | Fish                               | [Fish shell](https://fishshell.com)                                                | <!-- md:version V3.7.1 --> installed by brew              |
+| :material-close-box:  | Node                               | [https://nodejs.org/en](https://nodejs.org/en)                                     | <!-- md:version V22.2.0 --> installed by brew             |
+| :material-close-box:  | NPM                                | [https://www.npmjs.com](https://www.npmjs.com)                                     | <!-- md:version V10.7.2 --> installed by brew with node   |
+| :material-close-box:  | Fish                               | [Fish shell](https://fishshell.com)                                                | <!-- md:version V3.7.1 --> installed by brew              |
 | :material-check:      | Eza                                | [https://the.exa.website](https://the.exa.website)                                 | <!-- md:version V0.18.17 --> installed by brew            |
 | :material-check:      | Homebrew                           | [https://brew.sh](https://brew.sh)                                                 | <!-- md:version V3.3.5 --> installed by curl              |
 
 !!! info
-    To use the most of softwares. Please export the path to the `.bashrc` file in your home path.
+    To use the most of softwares. Please export the path to the `.bashrc` file in
+    your home path.
     `bat
     export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
     `
@@ -61,8 +62,8 @@ vncserver -list
 ![vncserverlist](img/vncserverlist.png "vncserver -list"){width="300"} 
 </div>
 
-!!! note 
-    **DO NOT** forget **_-localhost no_** after vncserver in step 3 **KEEP** in mind for the number in the **_X DISPLAY_** column.This will be used when you try to connect to the vncviewer clients.
+!!! note \* **DO NOT** forget **_-localhost no_** after vncserver in step 3 \* **KEEP** in mind for the number in the **_X DISPLAY_** column.
+This will be used when you try to connect to the vncviewer clients.
 
 ### Configuration at Client Point
 
@@ -123,8 +124,9 @@ export PATH="/home/user/miniconda3/bin:$PATH"
     </div>
 
 !!! note 
-    When you login the server using `#!cmd ssh`, you will get into `/home` path directly.
-    You can find the `.bashrc` file via `#!cmd ls -a` command in the `/home` path. - When you login the server using `vncviewer`, you can find the `.bashrc` file in the
+    - When you login the server using `#!cmd ssh`, you will get into `/home` path directly.
+    You can find the `.bashrc` file via `#!cmd ls -a` command in the `/home` path. 
+    - When you login the server using `vncviewer`, you can find the `.bashrc` file in the
     `Home` folder. Please note that `.bashrc` is a hided file in the `Home` folder.
     You can display hided files using shortcuts ++ctrl+h++.
 
